@@ -1,0 +1,36 @@
+{
+    "vdms_id": "VDMS-SIN-01",
+    "property_code": "SIN001",
+    "property_name": "Singapore Smart Hotel",
+    "location": {
+        "city": "Singapore",
+        "country": "Singapore"
+    },
+    "network": {
+        "hostname": "vdms-sin01.internal",
+        "vpn_endpoint": "172.60.12.4",
+        "agent_id": "edge-agent-1502"
+    },
+    "assets": [
+        {
+            "asset_id": "THERM-88",
+            "type": "Thermostat",
+            "vendor": "Nest",
+            "status": "healthy",
+            "telemetry": {
+                "setpoint": 22,
+                "room_temp": 22.4
+            }
+        },
+        {
+            "asset_id": "LAUN-03",
+            "type": "Laundry",
+            "vendor": "LG",
+            "status": "healthy",
+            "telemetry": {
+                "cycles_today": 58,
+                "water_usage_l": 920
+            }
+        }
+    ]
+}

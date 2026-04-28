@@ -1,0 +1,41 @@
+{
+    "vdms_id": "VDMS-MUM-01",
+    "property_code": "MUM001",
+    "property_name": "Mumbai Business Tower",
+    "location": {
+        "city": "Mumbai",
+        "country": "India"
+    },
+    "network": {
+        "hostname": "vdms-mum01.internal",
+        "vpn_endpoint": "172.30.12.4",
+        "agent_id": "edge-agent-1002"
+    },
+    "assets": [
+        {
+            "asset_id": "AHU-07",
+            "type": "HVAC_Module",
+            "vendor": "Carrier",
+            "status": "healthy",
+            "telemetry": {
+                "temperature_c": 23.8,
+                "airflow_cfm": 1600,
+                "power_kw": 11.5
+            }
+        },
+        {
+            "asset_id": "LIGHT-204",
+            "type": "Lighting",
+            "vendor": "Philips",
+            "status": "fault",
+            "telemetry": {
+                "power_watts": 0
+            },
+            "maintenance": {
+                "ticket_id": "INC-9022",
+                "fault": "Driver Failure",
+                "priority": "medium"
+            }
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+  "ioc_id": "IOC-COMP-001",
+  "company_id": "COMP-001",
+  "connected_vdms": [
+    "VDMS-BLR-01",
+    "VDMS-MUM-01",
+    "VDMS-SIN-01"
+  ],
+  "site_health": [
+    {
+      "property_code": "BLR001",
+      "asset_count": 582,
+      "healthy_assets": 571,
+      "fault_assets": 11,
+      "avg_temperature": 24.7,
+      "power_consumption_kw": 884
+    },
+    {
+      "property_code": "MUM001",
+      "asset_count": 746,
+      "healthy_assets": 739,
+      "fault_assets": 7,
+      "power_consumption_kw": 1124
+    },
+    {
+      "property_code": "SIN001",
+      "asset_count": 431,
+      "healthy_assets": 429,
+      "fault_assets": 2,
+      "power_consumption_kw": 520
+    }
+  ],
+  "global_metrics": {
+    "total_assets": 1759,
+    "active_faults": 20,
+    "avg_occupancy": 68,
+    "total_energy_kw": 2528
+  },
+  "alerts": [
+    {
+      "alert_id": "ALT-1001",
+      "site": "BLR001",
+      "type": "Overheat",
+      "asset": "AC-101",
+      "severity": "high",
+      "time": "2026-04-24T08:35:00Z"
+    },
+    {
+      "alert_id": "ALT-1002",
+      "site": "MUM001",
+      "type": "Lighting Failure",
+      "asset": "LIGHT-204",
+      "severity": "medium"
+    }
+  ],
+  "maintenance_summary": {
+    "open_tickets": 34,
+    "critical_tickets": 5,
+    "avg_resolution_hours": 6.2
+  },
+  "telemetry_rollups": [
+    {
+      "timestamp": "2026-04-24T09:00:00Z",
+      "avg_temp_all_sites": 24.4,
+      "energy_kw": 2491
+    },
+    {
+      "timestamp": "2026-04-24T10:00:00Z",
+      "avg_temp_all_sites": 24.8,
+      "energy_kw": 2528
+    }
+  ]
+}

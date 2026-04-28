@@ -1,0 +1,9 @@
+streamlit
+requests
+fastapi
+uvicorn
+langgraph
+groq
+httpx
+python-dotenv
+"fastapi[standard]"

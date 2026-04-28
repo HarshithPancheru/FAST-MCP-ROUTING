@@ -1,0 +1,91 @@
+{
+    "vdms_id": "VDMS-BLR-01",
+    "property_code": "BLR001",
+    "property_name": "Bangalore Tech Park",
+    "location": {
+        "city": "Bangalore",
+        "country": "India"
+    },
+    "network": {
+        "hostname": "vdms-blr01.internal",
+        "vpn_endpoint": "172.30.10.2",
+        "agent_id": "edge-agent-1001",
+        "last_heartbeat": "2026-04-24T09:15:00Z"
+    },
+    "assets": [
+        {
+            "asset_id": "AC-101",
+            "type": "AC",
+            "vendor": "Daikin",
+            "model": "VRV-X12",
+            "mac_address": "00:1A:C2:7B:AA:10",
+            "zone": "Floor-3-East",
+            "status": "warning",
+            "telemetry": {
+                "temperature_c": 29.6,
+                "power_kw": 4.3,
+                "airflow_cfm": 820,
+                "runtime_hours": 6230
+            },
+            "maintenance": {
+                "ticket_id": "INC-9001",
+                "fault": "High discharge temperature",
+                "vendor_contact": "support@daikin.com",
+                "priority": "high"
+            }
+        },
+        {
+            "asset_id": "AC-102",
+            "type": "AC",
+            "vendor": "Harshith",
+            "model": "VRV-X12",
+            "mac_address": "00:1A:C2:7B:AA:10",
+            "zone": "Floor-3-East",
+            "status": "warning",
+            "telemetry": {
+                "temperature_c": 29.6,
+                "power_kw": 4.3,
+                "airflow_cfm": 820,
+                "runtime_hours": 6230
+            },
+            "maintenance": {
+                "ticket_id": "INC-9001",
+                "fault": "High discharge temperature",
+                "vendor_contact": "support@daikin.com",
+                "priority": "high"
+            }
+        },
+        {
+            "asset_id": "RTR-21",
+            "type": "WiFi",
+            "vendor": "Harshith",
+            "model": "Catalyst 9300",
+            "mac_address": "00:1B:AA:FF:90:33",
+            "zone": "Server Room",
+            "status": "healthy",
+            "telemetry": {
+                "cpu_percent": 37,
+                "bandwidth_mbps": 640,
+                "uptime_days": 174
+            }
+        },
+        {
+            "asset_id": "OCC-08",
+            "type": "Occupancy",
+            "vendor": "Honeywell",
+            "status": "healthy",
+            "telemetry": {
+                "occupancy_count": 147,
+                "utilization_percent": 74
+            }
+        }
+    ],
+    "orders": [
+        {
+            "order_id": "ORD-5001",
+            "type": "Room Service",
+            "status": "pending",
+            "created_at": "2026-04-24T08:00:00Z"
+        }
+    ]
+}
